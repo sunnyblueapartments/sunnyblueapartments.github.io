@@ -111,9 +111,9 @@
     </div>
   </section>
 
-  <section class="py-16 px-4 bg-sand" id="apartment-detail">
+  <section class="py-16 px-4 bg-gradient-to-b from-transparent via-sand/70 to-sand/100" id="apartment-detail">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl md:text-4xl text-charcoal mb-16 text-center">Our Rooms</h2>
+      <h2 class="text-4xl md:text-5xl font-semibold text-charcoal mb-16 text-center">Our Rooms</h2>
     </div>
 
     <!-- Apartment 1 -->
@@ -153,14 +153,27 @@
       </div>
 
       <!-- Apartment Images -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-        <img src="src/img/room1/room1_bedroom.jpeg" alt="Bedroom" class="w-full h-48 object-cover rounded cursor-pointer zoomable" />
-        <img src="src/img/room1/room1_bathroom.jpeg" alt="Bathroom" class="w-full h-48 object-cover rounded cursor-pointer zoomable" />
-        <img src="src/img/room1/room1_kitchen.jpeg" alt="Kitchen" class="w-full h-48 object-cover rounded cursor-pointer zoomable" />
-        <img src="src/img/room1/room1_living.jpeg" alt="Living Room" class="w-full h-48 object-cover rounded cursor-pointer zoomable" />
-        <img src="src/img/room1/room1_balcony.jpeg" alt="Balcony" class="w-full h-48 object-cover rounded cursor-pointer zoomable" />
-      </div>
-    </div>
+<div class="flex flex-wrap justify-center gap-2">
+  <img src="src/img/room1/room1_bedroom.jpeg" alt="Bedroom"
+       class="w-full sm:w-[45%] md:w-[30%] lg:w-[30%]
+              h-48 object-cover rounded cursor-pointer zoomable" />
+
+  <img src="src/img/room1/room1_bathroom.jpeg" alt="Bathroom"
+       class="w-full sm:w-[45%] md:w-[30%] lg:w-[30%]
+              h-48 object-cover rounded cursor-pointer zoomable" />
+
+  <img src="src/img/room1/room1_kitchen.jpeg" alt="Kitchen"
+       class="w-full sm:w-[45%] md:w-[30%] lg:w-[30%]
+              h-48 object-cover rounded cursor-pointer zoomable" />
+
+  <img src="src/img/room1/room1_living.jpeg" alt="Living Room"
+       class="w-full sm:w-[45%] md:w-[30%] lg:w-[30%]
+              h-48 object-cover rounded cursor-pointer zoomable" />
+
+  <img src="src/img/room1/room1_balcony.jpeg" alt="Balcony"
+       class="w-full sm:w-[45%] md:w-[30%] lg:w-[30%]
+              h-48 object-cover rounded cursor-pointer zoomable" />
+</div>
 
     <!-- Apartment 2 -->
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 mb-16 scroll-mt-28">
@@ -213,7 +226,6 @@
 
 <div class="h-24 bg-gradient-to-b from-sand to-sky-200"></div>
 
-
 <section class="py-20 px-4 bg-linear-to-b from-sky-200 to-sky-300" id="omis">
   <div class="max-w-7xl mx-auto text-center md:text-left">
     <!-- Heading -->
@@ -260,6 +272,74 @@
   </div>
 </section>
 
+<div class="h-64 bg-gradient-to-b from-sky-300 to-white"></div>
+
+<section id="location" class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Section title -->
+    <h2 class="text-4xl md:text-5xl font-semibold text-charcoal text-center mb-16">
+      Location
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Text -->
+      <div class="space-y-6 text-charcoal text-base md:text-lg">
+        <p>
+          Sunny Blue Apartments are located in <strong>Nemira</strong>, a quiet seaside village just outside of Omiš, offering the perfect balance between relaxation and easy access to local attractions.
+        </p>
+
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="text-olive text-xl">🏖️</span>
+            <span>Only a short walk to crystal-clear beaches</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-olive text-xl">🌊</span>
+            <span>Peaceful coastal surroundings, away from crowds</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-olive text-xl">🏞️</span>
+            <span>Close to the Cetina River, rafting and hiking trails</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-olive text-xl">🚗</span>
+            <span>5-minute drive to Omiš town center</span>
+          </li>
+        </ul>
+
+        <p class="mt-4 font-semibold text-lg md:text-xl">
+          📍 Address: Put Nemire 37, 21310 Omiš, Croatia
+        </p>
+
+        <a
+          href="https://maps.google.com/?q=Put+Nemire+37+Nemira+Croatia"
+          target="_blank"
+          class="inline-block mt-4 bg-olive text-white px-6 py-3 rounded-xl hover:brightness-95 transition"
+        >
+          Open in Google Maps
+        </a>
+
+        <p class="text-charcoal/80">
+          Nemira is an ideal base for exploring the Dalmatian coast while enjoying a calm and authentic Mediterranean atmosphere.
+        </p>
+      </div>
+
+      <!-- Map -->
+      <div class="w-full h-[320px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg">
+        <iframe
+          title="Sunny Blue Apartments – Nemira"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351.910806822523!2d16.711066796996796!3d43.42342250535866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a99cdefabe11b%3A0x3c582f6b8c5b7773!2sApartments%20Marko!5e0!3m2!1sen!2shr!4v1770571310641!5m2!1sen!2shr"
+          class="w-full h-full border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <script>
   // Select all zoomable images
