@@ -24,7 +24,7 @@
 
         <!-- Logo -->
         <a
-            href="#home"
+            href="#home" data-i18n="nav_logo"
             class="text-2xl font text-white hover:text-gray-300 transition"
         >
             Sunny Blue Apartments
@@ -32,25 +32,34 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex space-x-8 lg:space-x-16 text-lg text-white items-center">
-            <a href="#home" class="hover:text-gray-300 transition">
+            <a href="#home" data-i18n="nav_home" class="hover:text-gray-300 transition">
             Home
             </a>
-            <a href="#apartment-detail" class="hover:text-gray-300 transition">
+            <a href="#apartment-detail" data-i18n="nav_apartments" class="hover:text-gray-300 transition">
             Apartments
             </a>
-            <a href="#omis" class="hover:text-gray-300 transition">
+            <a href="#omis" data-i18n="nav_omis" class="hover:text-gray-300 transition">
             Omiš City
             </a>
-            <a href="#location" class="hover:text-gray-300 transition">
+            <a href="#location" data-i18n="nav_location" class="hover:text-gray-300 transition">
             Location
             </a>
 
             <a
-            href="#contact"
+            href="#contact" data-i18n="nav_contact"
             class="bg-olive text-white px-4 py-2 rounded-xl hover:brightness-95 transition"
             >
             Contact
             </a>
+
+            <!-- Language Switch -->
+<button
+  id="lang-toggle"
+  class="ml-4 border border-white px-3 py-1 rounded-lg text-white text-sm hover:bg-white/10 transition"
+>
+  HR
+</button>
+
         </nav>
 
         <!-- Mobile Menu Icon (static) -->
@@ -71,25 +80,34 @@
         id="mobile-menu"
         class="hidden md:hidden bg-royal text-white px-6 py-4 space-y-8 w-full absolute top-20 left-1/2 transform -translate-x-1/2 shadow-lg z-40 rounded-lg rounded-t-none"
         >
-        <a href="#home" class="block text-lg pl-4 hover:text-gray-300 transition">
+        <a href="#home" data-i18n="nav_home" class="block text-lg pl-4 hover:text-gray-300 transition">
         Home
         </a>
-        <a href="#apartment-detail" class="block text-lg pl-4 hover:text-gray-300 transition">
+        <a href="#apartment-detail" data-i18n="nav_apartments" class="block text-lg pl-4 hover:text-gray-300 transition">
         Apartments
         </a>
-        <a href="#omis" class="block text-lg pl-4 hover:text-gray-300 transition">
+        <a href="#omis" data-i18n="nav_omis" class="block text-lg pl-4 hover:text-gray-300 transition">
         Omiš City
         </a>
-        <a href="#location" class="block text-lg pl-4 hover:text-gray-300 transition">
+        <a href="#location" data-i18n="nav_location" class="block text-lg pl-4 hover:text-gray-300 transition">
         Location
         </a>
 
         <a
-        href="#contact"
-        class="inline-block bg-olive text-white px-4 py-2 rounded-xl hover:brightness-95 transition"
+        href="#contact" data-i18n="nav_contact"
+        class="ml-2 inline-block bg-olive text-white px-4 py-2 rounded-xl hover:brightness-95 transition"
         >
         Contact
         </a>
+
+        <!-- Language Switch -->
+<button
+  id="lang-toggle"
+  class="ml-4 border border-white px-3 py-1 rounded-lg text-white text-sm hover:bg-white/10 transition"
+>
+  HR
+</button>
+
     </div>
     </header>
 
@@ -121,16 +139,16 @@
 
   <!-- Hero Content -->
   <div class="relative z-10 max-w-4xl px-6 text-center text-white py-32">
-    <h1 class="text-6xl md:text-7xl font-semibold mb-12 text-sky">
+    <h1 class="text-6xl md:text-7xl font-semibold mb-12 text-sky" data-i18n="hero_title">
       Sunny Blue Apartments
     </h1>
 
-    <p class="text-xl md:text-2xl mb-14 text-white/90">
+    <p class="text-xl md:text-2xl mb-14 text-white/90" data-i18n="hero_subtitle">
       Stylish apartments in Omiš with everything you need for a comfortable stay. Relax, explore, and enjoy your time by the Adriatic.
     </p>
 
     <a
-      href="#apartment-detail"
+      href="#apartment-detail" data-i18n="hero_button"
       class="inline-block bg-olive px-12 py-5 rounded-2xl text-xl hover:bg-olive-dark transition shadow-xl"
     >
       View Available Rooms
@@ -159,7 +177,7 @@
 
 <section class="py-16 px-4 bg-gradient-to-b from-transparent via-sand/70 to-sand/100" id="apartment-detail">
   <div class="max-w-7xl mx-auto">
-    <h2 class="text-4xl md:text-5xl font-semibold text-charcoal mb-16 text-center">
+    <h2 class="text-4xl md:text-5xl font-semibold text-charcoal mb-16 text-center" data-i18n="apartments_title">
       Our Apartments
     </h2>
   </div>
@@ -169,20 +187,20 @@
 
     <!-- Info -->
     <div class="text-charcoal">
-      <h3 class="text-2xl md:text-4xl text-charcoal mb-6 text-center md:text-left">
+      <h3 class="text-2xl md:text-4xl text-charcoal mb-6 text-center md:text-left" data-i18n="apartments_1_title">
   Apartment No. 1
 </h3>
 
-<p class="text-lg md:text-xl text-charcoal leading-relaxed mb-6">
-  This apartment accommodates <strong>2 guests</strong> and features a separate bedroom.
+<p class="text-lg md:text-xl text-charcoal leading-relaxed mb-6" data-i18n="apartments_1_info">
+  This apartment accommodates 2 guests and features a separate bedroom.
   It is comfortably and standardly furnished, ideal for a relaxing stay.
   The apartment includes a balcony with a beautiful sea view.
 </p>
 
 <div class="flex items-center gap-4 text-charcoal mb-4">
-  <span>2 guests</span>
+  <span data-i18n="apartments_1_guests">2 guests</span>
   <span>•</span>
-  <span>1 bedroom</span>
+  <span data-i18n="apartments_1_bedroom">1 bedroom</span>
 </div>
     </div>
     <!-- Images -->
@@ -204,20 +222,20 @@
   <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 mb-20 scroll-mt-28">
 
     <div class="text-charcoal">
-      <h3 class="text-2xl md:text-4xl text-charcoal mb-6 text-center md:text-left">
+      <h3 class="text-2xl md:text-4xl text-charcoal mb-6 text-center md:text-left" data-i18n="apartments_2_title">
   Apartment No. 2
 </h3>
 
-<p class="text-lg md:text-xl text-charcoal leading-relaxed mb-6">
-  This apartment accommodates <strong>2 guests</strong> and features a separate bedroom.
+<p class="text-lg md:text-xl text-charcoal leading-relaxed mb-6" data-i18n="apartments_2_info">
+  This apartment accommodates 2 guests and features a separate bedroom.
   It is comfortably and standardly furnished, ideal for a relaxing stay.
   The apartment includes a balcony with a beautiful sea view.
 </p>
 
 <div class="flex items-center gap-4 text-charcoal mb-4">
-  <span>2 guests</span>
+  <span data-i18n="apartments_2_guests">2 guests</span>
   <span>•</span>
-  <span>1 bedroom</span>
+  <span data-i18n="apartments_2_bedroom">1 bedroom</span>
 </div>
     </div>
 
@@ -240,12 +258,12 @@
   <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 mb-20 scroll-mt-28">
 
     <div class="text-charcoal">
-      <h3 class="text-2xl md:text-4xl text-charcoal mb-6 text-center md:text-left">
+      <h3 data-i18n="apartments_3_title" class="text-2xl md:text-4xl text-charcoal mb-6 text-center md:text-left">
   Apartment No. 3
 </h3>
 
-<p class="text-lg md:text-xl text-charcoal leading-relaxed mb-6">
-  This apartment accommodates <strong>2+2 guests</strong>.
+<p data-i18n="apartments_3_info" class="text-lg md:text-xl text-charcoal leading-relaxed mb-6">
+  This apartment accommodates 2+2 guests.
   It includes a separate bedroom and a large, comfortable sofa bed
   for two people in the living room.
   The apartment is standardly furnished and features a balcony
@@ -253,9 +271,9 @@
 </p>
 
 <div class="flex items-center gap-4 text-charcoal mb-4">
-  <span>2+2 guests</span>
+  <span data-i18n="apartments_3_guests">2+2 guests</span>
   <span>•</span>
-  <span>1 bedroom</span>
+  <span data-i18n="apartments_3_bedroom">1 bedroom</span>
 </div>
     </div>
 
@@ -278,20 +296,20 @@
   <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 scroll-mt-28">
 
     <div class="text-charcoal">
-      <h3 class="text-2xl md:text-4xl text-charcoal mb-6 text-center md:text-left">
+      <h3 data-i18n="apartments_deluxe_title" class="text-2xl md:text-4xl text-charcoal mb-6 text-center md:text-left">
   Deluxe Apartment
 </h3>
 
-<p class="text-lg md:text-xl text-charcoal leading-relaxed mb-6">
-  This apartment accommodates <strong>2 guests</strong> and features a separate bedroom.
+<p data-i18n="apartments_deluxe_info" class="text-lg md:text-xl text-charcoal leading-relaxed mb-6">
+  This apartment accommodates 2 guests and features a separate bedroom.
   It is comfortably and standardly furnished, ideal for a relaxing stay.
   The apartment includes a balcony with a beautiful sea view.
 </p>
 
 <div class="flex items-center gap-4 text-charcoal mb-4">
-  <span>2 guests</span>
+  <span data-i18n="apartments_deluxe_guests">2 guests</span>
   <span>•</span>
-  <span>1 bedroom</span>
+  <span data-i18n="apartments_deluxe_bedroom">1 bedroom</span>
 </div>
     </div>
 
@@ -319,7 +337,7 @@
 <section class="bg-sky/40 py-20 px-4 text-center">
   
   <h3 class="text-3xl md:text-4xl text-charcoal mb-4">
-    Apartment Amenities
+    Amenities & Services
   </h3>
 
   <p class="text-lg md:text-xl text-charcoal mb-12">
@@ -680,5 +698,112 @@
     mobileMenu.classList.toggle("hidden");
   });
 </script>
+
+<script>
+  const translations = {
+    en: {
+      nav_logo: "Sunny Blue Apartments",
+      nav_home: "Home",
+      nav_apartments: "Apartments",
+      nav_omis: "Omiš City",
+      nav_location: "Location",
+      nav_contact: "Contact",
+
+      hero_title: "Sunny Blue Apartments",
+      hero_subtitle:
+        "Stylish apartments in Omiš with everything you need for a comfortable stay.",
+      hero_button: "View Available Rooms",
+
+      apartments_title: "Our Apartments",
+
+      apartments_1_title: "Apartment No. 1",
+      apartments_1_info: "This apartment accommodates 2 guests and features a separate bedroom. It is comfortably and standardly furnished, ideal for a relaxing stay. The apartment includes a balcony with a beautiful sea view.",
+      apartments_1_guests: "2 guests",
+      apartments_1_bedroom: "1 bedroom",
+
+      apartments_2_title: "Apartment No. 2",
+      apartments_2_info: "This apartment accommodates 2 guests and features a separate bedroom. It is comfortably and standardly furnished, ideal for a relaxing stay. The apartment includes a balcony with a beautiful sea view.",
+      apartments_2_guests: "2 guests",
+      apartments_2_bedroom: "1 bedroom",
+
+      apartments_3_title: "Apartment No. 3",
+      apartments_3_info: "This apartment accommodates 2+2 guests. It includes a separate bedroom and a large, comfortable sofa bed for two people in the living room. The apartment is standardly furnished and features a balcony with a sea view.",
+      apartments_3_guests: "2+2 guests",
+      apartments_3_bedroom: "1 bedroom",
+
+      apartments_deluxe_title: "Deluxe Apartment",
+      apartments_deluxe_info: "This apartment accommodates 2 guests and features a separate bedroom. It is comfortably and standardly furnished, ideal for a relaxing stay. The apartment includes a balcony with a beautiful sea view.",
+      apartments_deluxe_guests: "2 guests",
+      apartments_deluxe_bedroom: "1 bedroom",
+    },
+
+    hr: {
+      nav_logo: "Sunny Blue Apartmani",
+      nav_home: "Početna",
+      nav_apartments: "Apartmani",
+      nav_omis: "Grad Omiš",
+      nav_location: "Lokacija",
+      nav_contact: "Kontakt",
+
+      hero_title: "Sunny Blue Apartmani",
+      hero_subtitle:
+        "Moderni apartmani u Omišu sa svime što vam je potrebno za ugodan boravak.",
+      hero_button: "Pogledaj Apartmane",
+
+      apartments_title: "Naši Apartmani",
+
+      apartments_1_title: "Deluxe Apartman",
+      apartments_1_info: "Ovaj apartman može primiti 2 osobe i ima zasebnu spavaću sobu. Udobno je i standardno namješten, idealan za opuštajući boravak. Apartman uključuje balkon s prekrasnim pogledom na more.",
+      apartments_1_guests: "2 osobe",
+      apartments_1_bedroom: "1 spavaća soba",
+
+      apartments_2_title: "Apartman Br. 2",
+      apartments_2_info: "Ovaj apartman može primiti 2 osobe i ima zasebnu spavaću sobu. Udobno je i standardno namješten, idealan za opuštajući boravak. Apartman uključuje balkon s prekrasnim pogledom na more.",
+      apartments_2_guests: "2 osobe",
+      apartments_2_bedroom: "1 spavaća soba",
+
+      apartments_3_title: "Apartman Br. 3",
+      apartments_3_info: "Ovaj apartman može primiti 2+2 osobe. Sadrži odvojenu spavaću sobu i veliki, udoban kauč na razvlačenje za dvije osobe u dnevnom boravku. Apartman je standardno namješten i ima balkon s pogledom na more.",
+      apartments_3_guests: "2+2 osobe",
+      apartments_3_bedroom: "1 spavaća soba",
+
+      apartments_deluxe_title: "Deluxe Apartman",
+      apartments_deluxe_info: "Ovaj apartman može primiti 2 osobe i ima zasebnu spavaću sobu. Udobno je i standardno namješten, idealan za opuštajući boravak. Apartman uključuje balkon s prekrasnim pogledom na more.",
+      apartments_deluxe_guests: "2 osobe",
+      apartments_deluxe_bedroom: "1 spavaća soba",
+    }
+  };
+
+const savedLang = localStorage.getItem("lang");
+
+let currentLang = savedLang
+  ? savedLang
+  : navigator.language.toLowerCase().startsWith("hr")
+    ? "hr"
+    : "en";
+
+  function setLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+
+    document.getElementById("lang-toggle").textContent =
+      lang === "en" ? "EN" : "HR";
+
+    localStorage.setItem("lang", lang);
+    currentLang = lang;
+  }
+
+  document.getElementById("lang-toggle").addEventListener("click", () => {
+    setLanguage(currentLang === "en" ? "hr" : "en");
+  });
+
+  // Init on load
+  setLanguage(currentLang);
+</script>
+
 </body>
 </html>
