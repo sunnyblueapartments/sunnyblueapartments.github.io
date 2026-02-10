@@ -54,8 +54,7 @@
 
             <!-- Language Switch -->
 <button
-  id="lang-toggle"
-  class="ml-4 border border-white px-3 py-1 rounded-lg text-white text-sm hover:bg-white/10 transition"
+  class="lang-toggle ml-4 border border-white px-3 py-1 rounded-lg text-white text-sm hover:bg-white/10 transition"
 >
   HR
 </button>
@@ -102,8 +101,7 @@
 
         <!-- Language Switch -->
 <button
-  id="lang-toggle"
-  class="ml-4 border border-white px-3 py-1 rounded-lg text-white text-sm hover:bg-white/10 transition"
+  class="lang-toggle ml-4 border border-white px-3 py-1 rounded-lg text-white text-sm hover:bg-white/10 transition"
 >
   HR
 </button>
@@ -886,27 +884,40 @@ let currentLang = savedLang
     ? "hr"
     : "en";
 
-  function setLanguage(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      if (translations[lang][key]) {
-        el.textContent = translations[lang][key];
-      }
-    });
-
-    document.getElementById("lang-toggle").textContent =
-      lang === "en" ? "EN" : "HR";
-
-    localStorage.setItem("lang", lang);
-    currentLang = lang;
-  }
-
-  document.getElementById("lang-toggle").addEventListener("click", () => {
-    setLanguage(currentLang === "en" ? "hr" : "en");
+function setLanguage(lang) {
+  // Update all elements with data-i18n
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
   });
 
-  // Init on load
-  setLanguage(currentLang);
+  // Update all language toggle buttons
+  document.querySelectorAll(".lang-toggle").forEach(btn => {
+    btn.textContent = lang === "en" ? "EN" : "HR";
+  });
+
+  localStorage.setItem("lang", lang);
+  currentLang = lang;
+}
+
+// Handle click/tap on all lang buttons
+const langButtons = document.querySelectorAll(".lang-toggle");
+
+langButtons.forEach(btn => {
+  btn.addEventListener("click", toggleLanguage);
+  btn.addEventListener("touchend", toggleLanguage);
+});
+
+function toggleLanguage() {
+  const newLang = currentLang === "en" ? "hr" : "en";
+  setLanguage(newLang);
+}
+
+// Initialize language on page load
+setLanguage(currentLang);
+
 </script>
 
 </body>
