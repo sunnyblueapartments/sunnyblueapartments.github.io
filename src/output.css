@@ -948,6 +948,9 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.lang-toggle {
+  touch-action: manipulation;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
